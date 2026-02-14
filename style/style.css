@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header .logo img {
+    width: 40px; 
+    height: auto; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.home-section {
+    width: 100%;
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: url(../image/nightreign.jpg) center center / cover no-repeat;
+    background-size: cover;
+}
+
+.home-section::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-search {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50px;         
+    left: 50%;         
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 90%;
+    max-width: 600px;
+}
+
+.search-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e03e00;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px; 
+    z-index: 1;
+}
+
+.game-promo {
+    color: white;
+    text-align: left;
+}
+
+.game-promo p {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+.game-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.game-image img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.game-price p {
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.container h2 {
+    font-size: 3rem; 
+    color: white;
+    margin-top: 20px;
+}
+
+.popular-games {
+    text-align: center;
+}
+
+.popular-games img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.game-info p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    display: block;         
+    width: fit-content;      
+    margin: 0 auto 40px auto; 
+    padding: 10px 30px;
+    border: 3px solid red;
+    border-radius: 20px;
+    text-align: center;     
+}
+
+
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.shop h2 {
+    font-size: 3rm; 
+    color: white;
+    margin-top: 20px;
+}
+
+.every-games {
+    text-align: center;
+}
+
+.every-games img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.every-games:hover,
+.popular-games:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.selected {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.cart-section {
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.cart-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cart-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-section li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.cart-section button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-cart {
+    color: black; 
+    background-color: red; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body, #cart-items, h2, p, button {
+    color: white;
+}
+
+button.add-to-cart {
+    color: black; 
+    background-color: red; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.add-to-cart:hover {
+    background-color: darkred; 
+}
+
+

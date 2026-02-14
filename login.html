@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="style/login.css"> 
+    <link rel="stylesheet" href="style/style.css"> 
+    <title>Se connecter
+    </title> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <button id="bouton">Login</button>
+    <span id="resultat"></span> 
+    <br><br>
+
+    <form id="formulaire"> 
+        <label for="civilite">Civilité :</label>
+        <select id="civilite" name="civilite" required> 
+            <option value="">-- Choisir --</option>
+            <option value="M.">Monsieur</option>
+            <option value="Mme">Madame</option>
+            <option value="Mme">Autre</option>
+        </select>
+        <br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required> 
+        <br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required> 
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required> 
+        <br><br>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" pattern="^0[0-9]{9}$" required> 
+        <br><br>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <script src="script/script.js"></script> 
+</body>
+</html>
+

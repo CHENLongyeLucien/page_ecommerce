@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+span {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#bouton {
+    color: black;
+    margin-top: 20px;
+}
+
+form button[type="submit"] {
+    color: black;
+    margin-top: 20px;
+}
